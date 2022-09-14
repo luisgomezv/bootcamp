@@ -16,10 +16,10 @@ spec:
       - name: nginx
         image: nginx:alpine
         env:
-        - name: MI_VARIABLE
-          value: "pelado"
-        - name: MI_OTRA_VARIABLE
-          value: "pelade"
+        - name: VAR_NAME_1
+          value: "var_name_1"
+        - name: VAR_NAME_2
+          value: "var_name_2"
         - name: DD_AGENT_HOST
           valueFrom:
             fieldRef:
